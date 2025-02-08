@@ -1,0 +1,21 @@
+[package]
+name = "hang_or_crash"
+version = "0.1.0"
+edition = "2021"
+authors = ["Carlo Dell'Acqua <carlo.dellacqua97@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cdellacqua/hang_or_crash.rs"
+
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.bench]
+opt-level = 3
+lto = true
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.5.1" }
