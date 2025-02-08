@@ -55,3 +55,12 @@ RUSTFLAGS="-Znext-solver" cargo +nightly bench
 ```
 
 (this one is probably related to [trait-system-refactor-initiative#109](https://github.com/rust-lang/trait-system-refactor-initiative/issues/109))
+
+
+## Note
+
+Compiling a simple test case that allocates an array of the same size doesn't lead to a crash.
+
+```sh
+cargo build --tests
+```
